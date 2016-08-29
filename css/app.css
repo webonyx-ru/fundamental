@@ -236,6 +236,39 @@ p {
 
 .content-wrap {
   background: #fff;
+  position: relative;
+}
+.content-wrap::after {
+  position: absolute;
+  top: 0;
+  right: -70px;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 129px;
+  background-image: url("../images/armo.png");
+  background-repeat: repeat-y;
+}
+@media only screen and (max-width: 959px) {
+  .content-wrap::after {
+    display: none;
+  }
+}
+.content-wrap::before {
+  position: absolute;
+  top: 0;
+  left: -150px;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 129px;
+  background-image: url("../images/armo.png");
+  background-repeat: repeat-y;
+}
+@media only screen and (max-width: 959px) {
+  .content-wrap::before {
+    display: none;
+  }
 }
 
 .header-top {
