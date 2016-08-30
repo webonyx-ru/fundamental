@@ -1,4 +1,3 @@
-/*
 $.fn.inView = function(){
     //Window Object
     var win = $(window);
@@ -12,6 +11,8 @@ $.fn.inView = function(){
     var objEndPos = (obj.offset().top + obj.outerHeight());
     return(visibleArea >= objEndPos && scrollPosition <= objEndPos ? true : false)
 };
+
+/*
 
 $(document).ready(function() {
     var flag = false,
@@ -164,3 +165,46 @@ function getNextElement(el) {
 
 })(jQuery);*!/
 */
+
+var scrollElems = document.querySelectorAll('[data-scroll]');
+
+for(var i=0; i < scrollElems.length; i++) {
+
+    $(scrollElems[i]).click(function(e) {
+        e.preventDefault();
+
+        var currentHref = $(this).attr('href'),
+            scrollDiv = $(currentHref),
+            windowHeight = $(window).height();
+
+
+        if(!(windowHeight < scrollDiv.height())) {
+            var needleOffset = (windowHeight - scrollDiv.height()) / 2;
+
+            $('html, body').animate({
+                scrollTop: $(scrollDiv).offset().top - needleOffset
+            }, 500);
+
+        } else {
+            $('html, body').animate({
+                scrollTop: $(scrollDiv).offset().top - 50
+            }, 500);
+        }
+
+        return false;
+    });
+}
+
+$(window).scroll(function(e) {
+    for(var i=0; i < scrollElems.length; i++) {
+        var currentHref = $(scrollElems[i]).attr('href'),
+            scrollDiv = $(currentHref),
+            windowHeight = $(window).height();
+
+        if(scrollDiv.inView() === true) {
+            $(scrollElems[i]).parent().addClass('active');
+        } else {
+            $(scrollElems[i]).parent().removeClass('active');
+        }
+    }
+});

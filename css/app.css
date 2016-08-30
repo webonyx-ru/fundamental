@@ -3,7 +3,7 @@
   font-family: "exo_2regular", serif;
 }
 
-.-ff-bold, strong, .uk-button, .main-navigation .uk-navbar-nav li, .main-navigation .uk-navbar-nav li a, .section .section-title, .article .article-title, .reviews .review-author, .reviews .uk-slideset li .slider-navs a, .works .article-title, .footer-info .footer-contacts {
+.-ff-bold, strong, .uk-button, .uk-tooltip, .main-navigation .uk-navbar-nav li, .main-navigation .uk-navbar-nav li a, .section .section-title, .article .article-title, .reviews .review-author, .reviews .uk-slideset li .slider-navs a, .works .article-title, .footer-info .footer-contacts {
   font-family: "exo_2bold", serif;
 }
 
@@ -19,7 +19,7 @@
   font-family: "robotolight", serif;
 }
 
-.-color-dark, body, .main-navigation .uk-navbar-nav .top-popup-btn, .section .section-title, .more-services .uk-button {
+.-color-dark, body, .uk-tooltip, .main-navigation .uk-navbar-nav .top-popup-btn, .section .section-title, .more-services .uk-button {
   color: #1a1a1a;
 }
 
@@ -71,7 +71,7 @@
   background-color: #4d4d4d;
 }
 
-.-bg-orange, .uk-button-primary, .uk-modal-dialog {
+.-bg-orange, .uk-button-primary, .uk-tooltip, #form-modal .uk-modal-dialog {
   background-color: #ffaa00;
 }
 
@@ -224,15 +224,38 @@ p {
 
 .uk-modal-dialog {
   width: 300px;
+  background: #fff;
   border-radius: 5px;
   padding: 25px;
   line-height: 1.5;
   font-size: 14px;
 }
+.uk-modal-dialog .uk-slidenav-previous {
+  background: url("../images/icons-2x/icon-prev.png") no-repeat center;
+}
+.uk-modal-dialog .uk-slidenav-previous::before {
+  display: none;
+}
+.uk-modal-dialog .uk-slidenav-next {
+  background: url("../images/icons-2x/icon-next.png") no-repeat center;
+}
+.uk-modal-dialog .uk-slidenav-next::before {
+  display: none;
+}
 
 .site-container {
   min-width: 320px;
   overflow: hidden;
+}
+
+.uk-tooltip {
+  border-radius: 5px;
+  padding: 10px;
+  max-width: 300px;
+  font-size: 16px;
+}
+.uk-tooltip::after {
+  border-top-color: #ffaa00;
 }
 
 .content-wrap {
@@ -360,11 +383,9 @@ p {
 }
 .main-navigation .uk-navbar-nav li a:hover {
   background: none;
-  color: #ffaa00 !important;
 }
 .main-navigation .uk-navbar-nav li a::visited {
   background: none;
-  color: #ffaa00 !important;
 }
 .main-navigation .uk-navbar-nav li:hover a {
   background: none;

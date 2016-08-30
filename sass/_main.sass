@@ -49,16 +49,40 @@ p
 
 .uk-modal-dialog
   width: 300px
-  @extend .-bg-orange
+  background: #fff
   border-radius: 5px
   padding: 25px
   line-height: 1.5
   @extend .-ff-regular
   font-size: 14px
 
+  .uk-slidenav-previous
+    background: url("../images/icons-2x/icon-prev.png") no-repeat center
+
+    &::before
+      display: none
+
+  .uk-slidenav-next
+    background: url("../images/icons-2x/icon-next.png") no-repeat center
+
+    &::before
+      display: none
+
 .site-container
   min-width: 320px
   overflow: hidden
+
+.uk-tooltip
+  @extend .-bg-orange
+  @extend .-color-dark
+  border-radius: 5px
+  padding: 10px
+  max-width: 300px
+  @extend .-ff-bold
+  font-size: 16px
+
+  &::after
+    border-top-color: $orange
 
 .content-wrap
   background: #fff
@@ -162,11 +186,11 @@ p
 
         &:hover
           background: none
-          color: $orange!important
+          //color: $orange!important
 
         &::visited
           background: none
-          color: $orange!important
+          //color: $orange!important
 
       &:hover
         a
@@ -471,6 +495,8 @@ p
     padding: 25px 0
 
 #form-modal
+  .uk-modal-dialog
+    @extend .-bg-orange
 
   .modal-title
     margin-bottom: 25px
