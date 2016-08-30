@@ -1,3 +1,6 @@
 
-.idea/
-.sass-cache/
+.idea
+app/.sass-cache
+app/bower_components
+node_modules
+dist
