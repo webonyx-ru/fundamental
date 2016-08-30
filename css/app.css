@@ -570,12 +570,33 @@ p {
   background: transparent;
 }
 .main-slider .slideshow-article {
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.5);
   display: inline-block;
   margin-top: 182px;
   margin-left: 43px;
-  width: 49%;
-  padding: 5px 21px;
+  width: 45%;
+  padding: 5px 5px 5px 21px;
+  position: relative;
+}
+.main-slider .slideshow-article::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  right: -50px;
+  top: 0;
+  border-bottom: 50px solid rgba(0, 0, 0, 0.5);
+  border-right: 50px solid transparent;
+}
+.main-slider .slideshow-article::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  top: 50px;
+  bottom: 0;
+  height: auto;
+  right: -50px;
+  background: rgba(0, 0, 0, 0.5);
 }
 .main-slider .slideshow-article .slideshow-info {
   font-size: 12.33px;
