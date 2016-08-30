@@ -23,7 +23,7 @@
   color: #1a1a1a;
 }
 
-.-color-light, .main-navigation .uk-navbar-nav li a, .main-navigation .uk-navbar-nav .top-popup-btn:hover, .section .section-after-info, .more-services .uk-list li, .more-services .uk-button:hover, #form-modal *[type=submit], #mobile-nav .uk-list li a {
+.-color-light, .main-navigation .uk-navbar-nav li a, .section .section-after-info, .more-services .uk-list li, .more-services .uk-button:hover, #form-modal *[type=submit], #mobile-nav .uk-list li a {
   color: #fff !important;
 }
 
@@ -379,6 +379,9 @@ p {
   margin-right: 14px;
   font-size: 12.33px;
   font-weight: bold;
+}
+.main-navigation .uk-navbar-nav .top-popup-btn:hover {
+  color: #fff !important;
 }
 
 .section {
