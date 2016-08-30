@@ -222,6 +222,10 @@ p {
   font-size: 12px;
 }
 
+.uk-modal-dialog-lightbox {
+  max-width: 800px;
+}
+
 .uk-modal-dialog {
   width: 300px;
   background: #fff;
