@@ -289,8 +289,13 @@ p
     &:hover
       @extend .-color-light
 
+.article__inner
+  position: relative
+  height: 100%
+
 .reviews
   padding: 62px 0 28px 0
+  overflow: hidden
 
   .review
     max-width: 80%
@@ -354,7 +359,7 @@ p
           margin-top: 0
 
         a
-          @extend .-ff-bold
+          @extend .-ff-regular
           @extend .-color-orange
           text-decoration: none
           line-height: 19px
@@ -379,9 +384,16 @@ p
   .uk-slidenav-next
     font-size: 16px
     color: $dark
+    margin-right: 10px
 
     &:before
       display: none
+
+    &:hover
+      text-decoration: none !important
+      .fri-next
+        left: 10px
+
 
 .works
   margin-left: -25px
@@ -391,6 +403,9 @@ p
 
   .article-title
     @extend .-ff-bold
+    font-weight: bold
+    line-height: normal
+    font-size: 13px
 
 .uk-slideshow>li
   max-height: 466px

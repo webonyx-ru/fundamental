@@ -5,12 +5,12 @@ var gulp = require('gulp'),
     uglify = require('gulp-uglify'),
     minifyCss = require('gulp-minify-css'),
     clean = require('gulp-clean'),
-    sftp = require('gulp-sftp');
+    ftp = require('gulp-ftp');
 
 // sftp
-gulp.task('sftp', function(){
+gulp.task('ftp', function(){
     gulp.src("dist/**/*")
-        .pipe(sftp({
+        .pipe(ftp({
             host: "",
             user: "",
             pass: "",

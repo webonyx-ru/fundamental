@@ -4,5 +4,6 @@
   "description": "Gulp testing project",
   "author": "Yuriy Bogatyrenko",
   "dependencies": {
+    "uikit": "^2.27.1"
   }
 }
