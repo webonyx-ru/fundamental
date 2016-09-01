@@ -1,5 +1,7 @@
 =retina-bg($normal, $retina, $contain: false)
     background-image: image-url($normal)
+    background-repeat: no-repeat
+    background-position: center center
 
     @if $contain == true and $contain != 'autosize'
         background-size: contain

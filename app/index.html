@@ -25,135 +25,142 @@
 </head>
 <body>
 
-    <div class="site-container" id="main-wrap">
-        <!-- Mobile Navigation -->
-        <nav class="uk-navbar uk-visible-small -bg-grey -gradient-grey">
-            <a href="#mobile-nav" class="uk-navbar-toggle -color-grey-light"  data-uk-offcanvas></a>
-            <a href="#" class="uk-navbar-brand uk-navbar-center -color-grey-light">Фундаментально.рф</a>
-        </nav>
-        <div id="mobile-nav" class="uk-offcanvas">
-            <div class="uk-offcanvas-bar -gradient-grey">
-                <div class="logo-small-wrap">
-                    <a href="#" class="logo-small"></a>
-                </div>
-                <ul class="uk-list">
-                    <li><a href="#services" data-uk-smooth-scroll="">Услуги</a></li>
-                    <li><a href="#reviews" data-uk-smooth-scroll="">Отзывы клиентов</a></li>
-                    <li><a href="#works" data-uk-smooth-scroll="">Примеры работ</a></li>
-                    <li><a href="#contacts" data-uk-smooth-scroll="">Контакты</a></li>
-                </ul>
+<div class="site-container" id="main-wrap">
+    <!-- Mobile Navigation -->
+    <nav class="uk-navbar uk-visible-small -bg-grey -gradient-grey">
+        <a href="#mobile-nav" class="uk-navbar-toggle -color-grey-light" data-uk-offcanvas></a>
+        <a href="#" class="uk-navbar-brand uk-navbar-center uk-visible-medium -color-grey-light">Фундаментально.рф</a>
+        <a href="#form-modal" class="uk-float-right uk-button uk-button-primary uk-button-small uk-visible-small top-popup-btn"
+           data-uk-modal="{center:true}">Заказать расчет фундамента</a>
+    </nav>
+    <div id="mobile-nav" class="uk-offcanvas">
+        <div class="uk-offcanvas-bar -gradient-grey">
+            <div class="logo-small-wrap">
+                <a href="#" class="logo-small"></a>
             </div>
+            <ul class="uk-list">
+                <li><a href="#services" data-uk-smooth-scroll="">Услуги</a></li>
+                <li><a href="#reviews" data-uk-smooth-scroll="">Отзывы клиентов</a></li>
+                <li><a href="#works" data-uk-smooth-scroll="">Примеры работ</a></li>
+                <li><a href="#contacts" data-uk-smooth-scroll="">Контакты</a></li>
+            </ul>
         </div>
-        <!-- Mobile Navigation end -->
+    </div>
+    <!-- Mobile Navigation end -->
 
-        <!-- Header section -->
-        <header class="header scroll-section">
-            <section class="header-top">
-                <div class="uk-container uk-container-center">
-                    <div class="uk-grid uk-grid-width-small-1-1 uk-grid-width-medium-1-2">
-                        <div class="logo-large-wrap uk-hidden-small">
-                            <a href="#" class="logo-large"></a>
-                        </div>
-                        <div class="header-top-info">
-                            <p class="-ff-bold"><span class="-color-grey-dark">Наш телефон:</span> +7 (495) 410 35 55</p>
-                        </div>
+    <!-- Header section -->
+    <header class="header scroll-section">
+        <section class="header-top">
+            <div class="uk-container uk-container-center">
+                <div class="uk-grid uk-grid-width-small-1-1 uk-grid-width-medium-1-2">
+                    <div class="logo-large-wrap uk-hidden-small">
+                        <a href="#" class="logo-large"></a>
+                    </div>
+                    <div class="header-top-info">
+                        <p><span class="-color-grey-dark">Наш телефон:</span> +7 (495) 410 35 55</p>
                     </div>
                 </div>
-            </section>
-            <nav class="main-navigation uk-navbar uk-hidden-small -bg-dark" data-uk-sticky>
-                <div class="uk-container uk-container-center">
-                    <a href="#" class="uk-navbar-brand logo-small"></a>
+            </div>
+        </section>
+        <nav class="main-navigation uk-navbar uk-hidden-small -bg-dark" data-uk-sticky>
+            <div class="uk-container uk-container-center">
+                <a href="#" class="uk-navbar-brand logo-small "></a>
+                <ul class="uk-navbar-nav">
+                    <li class="navbar-info">
+                        <p>
+                            <small class="-color-light">Наш телефон:</small>
+                        </p>
+                        <p class="-color-grey second-header__phone">+7 (495) 410 35 35</p>
+                    </li>
+                    <li><a href="#services" data-scroll>Услуги</a></li>
+                    <li><a href="#reviews" data-scroll>Отзывы клиентов</a></li>
+                    <li><a href="#works" data-scroll>Примеры работ</a></li>
+                    <li><a href="#contacts" data-scroll>Контакты</a></li>
+                </ul>
+                <nav class="uk-navbar-flip uk-visible-large">
                     <ul class="uk-navbar-nav">
-                        <li class="navbar-info">
-                            <p><small class="-color-light">Наш телефон:</small></p>
-                            <p class="-color-grey">+7 (495) 410 35 35</p>
-                        </li>
-                        <li><a href="#services" data-scroll>Услуги</a></li>
-                        <li><a href="#reviews" data-scroll>Отзывы клиентов</a></li>
-                        <li><a href="#works" data-scroll>Примеры работ</a></li>
-                        <li><a href="#contacts" data-scroll>Контакты</a></li>
+                        <a href="#form-modal" class="uk-button uk-button-primary uk-button-small top-popup-btn"
+                           data-uk-modal="{center:true}">Заказать расчет фундамента</a>
                     </ul>
-                    <nav class="uk-navbar-flip uk-visible-large">
-                        <ul class="uk-navbar-nav">
-                            <a href="#form-modal" class="uk-button uk-button-primary uk-button-small top-popup-btn" data-uk-modal="{center:true}">Заказать расчет фундамента</a>
-                        </ul>
-                    </nav>
-                </div>
-            </nav>
-        </header><!-- Header section end -->
+                </nav>
+            </div>
+        </nav>
+    </header><!-- Header section end -->
 
-        <div class="uk-container uk-container-center content-wrap">
-            <!-- Slideshow section -->
-            <div class="main-slider uk-slidenav-position scroll-section" data-uk-slideshow="{animation: 'swipe'}">
-                <ul class="uk-slideshow">
-                    <li>
-                        <img src="images/banners/banner1_@2x.png" alt="">
-                        <div class="uk-overlay-panel uk-overlay-background uk-overlay-fade uk-hidden-small">
-                            <div class="uk-container uk-container-center">
-                                <div class="slideshow-article">
-                                    <h4 class="slideshow-title">Фундамент — наша работа!</h4>
-                                    <p class="slideshow-info">C 2001 мы оказываем услуги  по строительным работам,  проектированию жилых и административных зданий, торговых комплексов, развлекательных центров, промышленных объектов, коммерческих зданий, социальных и гражданских объектов.</p>
-                                </div>
+    <div class="uk-container uk-container-center content-wrap">
+        <!-- Slideshow section -->
+        <div class="main-slider uk-slidenav-position scroll-section" data-uk-slideshow="{animation: 'swipe'}">
+            <ul class="uk-slideshow">
+                <li>
+                    <img src="images/banners/banner1_@2x.png" alt="">
+                    <div class="uk-overlay-panel uk-overlay-background uk-overlay-fade uk-hidden-small">
+                        <div class="uk-container uk-container-center">
+                            <div class="slideshow-article">
+                                <h4 class="slideshow-title">Фундамент — наша работа!</h4>
+                                <!--<p class="slideshow-info">C 2001 мы оказываем услуги  по строительным работам,  проектированию жилых и административных зданий, торговых комплексов, развлекательных центров, промышленных объектов, коммерческих зданий, социальных и гражданских объектов.</p>-->
                             </div>
                         </div>
-                    </li>
-                    <li>
-                        <img src="images/banners/banner2_@2x.png" alt="">
-                        <div class="uk-overlay-panel uk-overlay-background uk-overlay-fade uk-hidden-small">
-                            <div class="uk-container uk-container-center">
-                                <div class="slideshow-article">
-                                    <h4 class="slideshow-title">Качество фундаментов на высшем уровне!</h4>
-                                    <p class="slideshow-info">C 2001 мы оказываем услуги  по строительным работам,  проектированию жилых и административных зданий, торговых комплексов, развлекательных центров, промышленных объектов, коммерческих зданий, социальных и гражданских объектов.</p>
-                                </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/banners/banner2_@2x.png" alt="">
+                    <div class="uk-overlay-panel uk-overlay-background uk-overlay-fade uk-hidden-small">
+                        <div class="uk-container uk-container-center">
+                            <div class="slideshow-article">
+                                <h4 class="slideshow-title">Качество фундаментов на высшем уровне!</h4>
+                                <!--<p class="slideshow-info">C 2001 мы оказываем услуги  по строительным работам,  проектированию жилых и административных зданий, торговых комплексов, развлекательных центров, промышленных объектов, коммерческих зданий, социальных и гражданских объектов.</p>-->
                             </div>
                         </div>
-                    </li>
-                    <li>
-                        <img src="images/banners/banner3_@2x.png" alt="">
-                        <div class="uk-overlay-panel uk-overlay-background uk-overlay-fade uk-hidden-small">
-                            <div class="uk-container uk-container-center">
-                                <div class="slideshow-article">
-                                    <h4 class="slideshow-title">Оптимальные цены на строительство фундаментов</h4>
-                                    <p class="slideshow-info">C 2001 мы оказываем услуги  по строительным работам,  проектированию жилых и административных зданий, торговых комплексов, развлекательных центров, промышленных объектов, коммерческих зданий, социальных и гражданских объектов.</p>
-                                </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/banners/banner3_@2x.png" alt="">
+                    <div class="uk-overlay-panel uk-overlay-background uk-overlay-fade uk-hidden-small">
+                        <div class="uk-container uk-container-center">
+                            <div class="slideshow-article">
+                                <h4 class="slideshow-title">Оптимальные цены на строительство фундаментов</h4>
+                                <!--<p class="slideshow-info">C 2001 мы оказываем услуги  по строительным работам,  проектированию жилых и административных зданий, торговых комплексов, развлекательных центров, промышленных объектов, коммерческих зданий, социальных и гражданских объектов.</p>-->
                             </div>
                         </div>
-                    </li>
-                    <li>
-                        <img src="images/banners/banner4_@2x.png" alt="">
-                        <div class="uk-overlay-panel uk-overlay-background uk-overlay-fade uk-hidden-small">
-                            <div class="uk-container uk-container-center">
-                                <div class="slideshow-article">
-                                    <h4 class="slideshow-title">Все работы выполняют высококвалифицированные специалисты</h4>
-                                    <p class="slideshow-info">C 2001 мы оказываем услуги  по строительным работам,  проектированию жилых и административных зданий, торговых комплексов, развлекательных центров, промышленных объектов, коммерческих зданий, социальных и гражданских объектов.</p>
-                                </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/banners/banner4_@2x.png" alt="">
+                    <div class="uk-overlay-panel uk-overlay-background uk-overlay-fade uk-hidden-small">
+                        <div class="uk-container uk-container-center">
+                            <div class="slideshow-article">
+                                <h4 class="slideshow-title">Все работы выполняют высококвалифицированные
+                                    специалисты</h4>
+                                <!--<p class="slideshow-info">C 2001 мы оказываем услуги  по строительным работам,  проектированию жилых и административных зданий, торговых комплексов, развлекательных центров, промышленных объектов, коммерческих зданий, социальных и гражданских объектов.</p>-->
                             </div>
                         </div>
-                    </li>
-                    <li>
-                        <img src="images/banners/banner5_@2x.png" alt="">
-                        <div class="uk-overlay-panel uk-overlay-background uk-overlay-fade uk-hidden-small">
-                            <div class="uk-container uk-container-center">
-                                <div class="slideshow-article">
-                                    <h4 class="slideshow-title">Мы соблюдаем сроки строительства</h4>
-                                    <p class="slideshow-info">C 2001 мы оказываем услуги  по строительным работам,  проектированию жилых и административных зданий, торговых комплексов, развлекательных центров, промышленных объектов, коммерческих зданий, социальных и гражданских объектов.</p>
-                                </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/banners/banner5_@2x.png" alt="">
+                    <div class="uk-overlay-panel uk-overlay-background uk-overlay-fade uk-hidden-small">
+                        <div class="uk-container uk-container-center">
+                            <div class="slideshow-article">
+                                <h4 class="slideshow-title">Мы соблюдаем сроки строительства</h4>
+                                <!--<p class="slideshow-info">C 2001 мы оказываем услуги  по строительным работам,  проектированию жилых и административных зданий, торговых комплексов, развлекательных центров, промышленных объектов, коммерческих зданий, социальных и гражданских объектов.</p>-->
                             </div>
                         </div>
-                    </li>
-                </ul>
-                <ul class="uk-dotnav uk-dotnav-contrast uk-position-bottom uk-flex-left">
-                    <li data-uk-slideshow-item="0"><a href="#"></a></li>
-                    <li data-uk-slideshow-item="1"><a href="#"></a></li>
-                    <li data-uk-slideshow-item="2"><a href="#"></a></li>
-                    <li data-uk-slideshow-item="3"><a href="#"></a></li>
-                    <li data-uk-slideshow-item="4"><a href="#"></a></li>
-                </ul>
-            </div><!-- Slideshow section end -->
+                    </div>
+                </li>
+            </ul>
+            <ul class="uk-dotnav uk-dotnav-contrast uk-position-bottom uk-flex-left">
+                <li data-uk-slideshow-item="0"><a href="#"></a></li>
+                <li data-uk-slideshow-item="1"><a href="#"></a></li>
+                <li data-uk-slideshow-item="2"><a href="#"></a></li>
+                <li data-uk-slideshow-item="3"><a href="#"></a></li>
+                <li data-uk-slideshow-item="4"><a href="#"></a></li>
+            </ul>
+        </div><!-- Slideshow section end -->
 
-            <!-- Services section -->
-            <section class="sercives section scroll-section" id="services">
-                <h2 class="section-title">Наши услуги и цены <span data-uk-tooltip="{pos:'top-left'}" title="
+        <!-- Services section -->
+        <section class="sercives section scroll-section" id="services">
+            <h2 class="section-title">Наши услуги и цены <span class="icon-fri__wrapper"
+                                                               data-uk-tooltip="{pos:'top-left'}" title="
                     Окончательная стоимость
                     определяется сметной
                     документацией.
@@ -161,325 +168,386 @@
                     Смета формируется на
                     основании проекта
                     и особенностей участка."><i class="fri fri-require uk-hidden-small"></i></span></h2>
-                <div class="uk-grid uk-grid-medium uk-grid-width-small-1-1 uk-grid-width-medium-1-2 uk-grid-width-large-1-3" data-uk-grid-margin data-uk-grid-match>
-                    <div class="article">
-                        <div class="article__inner -bg-grey-light">
-                            <a href="images/article1/large/1.jpg"
-                                                        data-uk-lightbox="{group:'my-group'}" title=""><img
-                            src="images/article1/small/1.jpg" alt="" class="article-img"></a>
-                            <div class="-boxed -bg-grey-light">
-                                <p class="article-title -color-dark -font-smaller">Ленточный заглубленный фундамент</p>
-                                <p class="article-info -line-up -color-dark">Цена: от 5 000 рублей</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="article">
-                        <div class="article__inner -bg-grey-light">
-                            <a href="images/article1/large/2.jpg"
-                                                        data-uk-lightbox="{group:'my-group'}" title=""><img
-                            src="images/article1/small/2.jpg" alt="" class="article-img"></a>
-                            <div class="-boxed -bg-grey-light">
-                                <p class="article-title -color-dark -font-smaller">Ростверк на сваях</p>
-                                <p class="article-info -line-up -color-dark">Цена: от 5 000 рублей</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="article">
-                        <div class="article__inner -bg-grey-light">
-                            <a href="images/article1/large/3.jpg"
-                                                        data-uk-lightbox="{group:'my-group'}" title=""><img
-                            src="images/article1/small/3.jpg" alt="" class="article-img"></a>
-                            <div class="-boxed -bg-grey-light">
-                                <p class="article-title -color-dark -font-smaller">Цокольный этаж</p>
-                                <p class="article-info -line-up -color-dark">Цена: от 6 000 рублей</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="article">
-                        <div class="article__inner -bg-grey-light">
-                            <a href="images/article1/large/4.jpg"
-                                                        data-uk-lightbox="{group:'my-group'}" title=""><img
-                            src="images/article1/small/4.jpg" alt="" class="article-img"></a>
-                            <div class="-boxed -bg-grey-light">
-                                <p class="article-title -color-dark -font-smaller">Ленточный фундамент с опорной
-                                    подошвой</p>
-                                <p class="article-info -line-up -color-dark">Цена: от 5 000 рублей</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="article">
-                        <div class="article__inner -bg-grey-light">
-                            <a href="images/article1/large/5.jpg"
-                                                        data-uk-lightbox="{group:'my-group'}" title=""><img
-                            src="images/article1/small/5.jpg" alt="" class="article-img"></a>
-                            <div class="-boxed -bg-grey-light">
-                                <p class="article-title -color-dark -font-smaller">Плиточный фундамент</p>
-                                <p class="article-info -line-up -color-dark">Цена: от 5 000 рублей</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="article">
-                        <div class="article__inner -bg-grey-light">
-                            <a href="images/article1/large/6.jpg"
-                                                        data-uk-lightbox="{group:'my-group'}" title=""><img
-                            src="images/article1/small/6.jpg" alt="" class="article-img"></a>
-                            <div class="-boxed -bg-grey-light">
-                                <p class="article-title -color-dark -font-smaller">Ленточный мелкозаглубленный
-                                    фундамент</p>
-                                <p class="article-info -line-up -color-dark">Цена: от 10 000 рублей</p>
-                            </div>
+            <div class="uk-grid uk-grid-medium uk-grid-width-small-1-1 uk-grid-width-medium-1-2 uk-grid-width-large-1-3"
+                 data-uk-grid-margin data-uk-grid-match>
+                <div class="article">
+                    <div class="article__inner -bg-grey-light">
+                        <a class="article__image-link__wrapper" href="images/article1/large/1.jpg"
+                           data-uk-lightbox="{group:'my-group'}" title=""><img
+                                src="images/article1/small/1.jpg" alt="" class="article-img"></a>
+                        <div class="-boxed -bg-grey-light">
+                            <p class="article-title -color-dark -font-smaller">Ленточный заглубленный фундамент</p>
+                            <p class="article-info -line-up -color-dark">Цена: от 5 000 рублей</p>
                         </div>
                     </div>
                 </div>
-            </section><!-- Services section end -->
-
-            <!-- More services -->
-            <section class="more-services section scroll-section" id="more-services">
-                <div class="more-services-wrap">
-                    <h2 class="section-title -color-light">Дополнительные услуги</h2>
-                    <div class="uk-grid uk-grid-medium uk-grid-width-small-1-1 uk-grid-width-medium-1-2" data-uk-grid-match data-uk-grid-margin>
-                        <div>
-                            <ul class="uk-list">
-                                <li>Инженерно-геологические изыскания</li>
-                                <li>Профессиональное проектирование </li>
-                                <li>Строительство фундаментов зимой</li>
-                                <li>Арматурные работы</li>
-                                <li>Технадзор</li>
-                            </ul>
+                <div class="article">
+                    <div class="article__inner -bg-grey-light">
+                        <a class="article__image-link__wrapper" href="images/article1/large/2.jpg"
+                           data-uk-lightbox="{group:'my-group'}" title=""><img
+                                src="images/article1/small/2.jpg" alt="" class="article-img"></a>
+                        <div class="-boxed -bg-grey-light">
+                            <p class="article-title -color-dark -font-smaller">Ростверк на сваях</p>
+                            <p class="article-info -line-up -color-dark">Цена: от 5 000 рублей</p>
                         </div>
-                        <div>
-                            <ul class="uk-list">
-                                <li>Опалубка фундаментов</li>
-                                <li>Гидроизоляция, утепление, отмостка </li>
-                                <li>Строительство подземных сооружений</li>
-                                <li>Монолитные работы</li>
-                                <li>Осушение подземных сооружений</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="uk-text-center">
-                        <div class="section-after-info">
-                            Мы обладаем необходимыми разрешительными документами на все виды работ, выполняемые нашей компанией.
-                        </div>
-                    </div>
-                    <div class="uk-text-center">
-                        <a href="#form-modal" class="uk-button uk-button-primary" data-uk-modal="{center:true}">Обсудить ваш проект</a>
                     </div>
                 </div>
-            </section><!-- More services end -->
+                <div class="article">
+                    <div class="article__inner -bg-grey-light">
+                        <a class="article__image-link__wrapper" href="images/article1/large/3.jpg"
+                           data-uk-lightbox="{group:'my-group'}" title=""><img
+                                src="images/article1/small/3.jpg" alt="" class="article-img"></a>
+                        <div class="-boxed -bg-grey-light">
+                            <p class="article-title -color-dark -font-smaller">Цокольный этаж</p>
+                            <p class="article-info -line-up -color-dark">Цена: от 6 000 рублей</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="article">
+                    <div class="article__inner -bg-grey-light">
+                        <a class="article__image-link__wrapper" href="images/article1/large/4.jpg"
+                           data-uk-lightbox="{group:'my-group'}" title=""><img
+                                src="images/article1/small/4.jpg" alt="" class="article-img"></a>
+                        <div class="-boxed -bg-grey-light">
+                            <p class="article-title -color-dark -font-smaller">Ленточный фундамент с опорной
+                                подошвой</p>
+                            <p class="article-info -line-up -color-dark">Цена: от 5 000 рублей</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="article">
+                    <div class="article__inner -bg-grey-light">
+                        <a class="article__image-link__wrapper" href="images/article1/large/5.jpg"
+                           data-uk-lightbox="{group:'my-group'}" title=""><img
+                                src="images/article1/small/5.jpg" alt="" class="article-img"></a>
+                        <div class="-boxed -bg-grey-light">
+                            <p class="article-title -color-dark -font-smaller">Плиточный фундамент</p>
+                            <p class="article-info -line-up -color-dark">Цена: от 5 000 рублей</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="article">
+                    <div class="article__inner -bg-grey-light">
+                        <a class="article__image-link__wrapper" href="images/article1/large/6.jpg"
+                           data-uk-lightbox="{group:'my-group'}" title=""><img
+                                src="images/article1/small/6.jpg" alt="" class="article-img"></a>
+                        <div class="-boxed -bg-grey-light">
+                            <p class="article-title -color-dark -font-smaller">Ленточный мелкозаглубленный
+                                фундамент</p>
+                            <p class="article-info -line-up -color-dark">Цена: от 10 000 рублей</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- Services section end -->
 
-            <!-- Reviews section -->
-            <section class="reviews section scroll-section" id="reviews">
-                <h2 class="section-title">Отзывы клиентов</h2>
-                <div data-uk-slideset="{default: 1, infinite: false, animation: 'slide-horizontal'}">
-                    <div class="uk-slidenav-position">
-                        <ul class="uk-grid uk-slideset">
-                            <li class="uk-text-center">
-                                <article class="review">
-                                    <div class="uk-text-center">
-                                        <div class="review-info">
-                                            Заказывал фундамент для своего дома — остался очень доволен работой. Менеджеры грамотно отвечают на вопросы и реально разбираются в теме.
-                                            <br> <br>
-                                            Сам фундамент залили качественно и без заморочек. Рабочие профессиональные, плюс охотно отвечали на вопросы. После окончания работ все увезли и прибрали, что тоже приятно удивило. Смело могу рекомендовать!
-                                        </div>
-                                    </div>
-                                    <div class="review-author">
-                                        <img src="images/author.png" alt="">
-                                        <p>Александр Варфоломеев, <br>г. Климовск</p>
-                                    </div>
-                                    <div class="slider-navs">
-                                        <a href="#" class="uk-slidenav-next" data-uk-slideset-item="next">Следующий отзыв<i class="fri fri-next"></i></a>
-                                    </div>
-                                </article>
-                            </li>
-                            <li class="uk-text-center">
-                                <article class="review">
-                                    <div class="uk-text-center">
-                                        <div class="review-info">
-                                            Заказывал фундамент для своего дома — остался очень доволен работой. Менеджеры грамотно отвечают на вопросы и реально разбираются в теме.
-                                            <br> <br>
-                                            Сам фундамент залили качественно и без заморочек. Рабочие профессиональные, плюс охотно отвечали на вопросы. После окончания работ все увезли и прибрали, что тоже приятно удивило. Смело могу рекомендовать!
-                                        </div>
-                                    </div>
-                                    <div class="review-author">
-                                        <img src="images/author.png" alt="">
-                                        <p>Александр Варфоломеев, <br>г. Климовск</p>
-                                    </div>
-
-                                    <div class="slider-navs">
-                                        <a href="#" class="uk-slidenav-next" data-uk-slideset-item="next">Следующий отзыв<i class="fri fri-next"></i></a>
-                                    </div>
-                                </article>
-                            </li>
-                            <li class="uk-text-center">
-                                <article class="review">
-                                    <div class="review-info">
-                                        Заказывал фундамент для своего дома — остался очень доволен работой. Менеджеры грамотно отвечают на вопросы и реально разбираются в теме.
-                                        <br> <br>
-                                        Сам фундамент залили качественно и без заморочек. Рабочие профессиональные, плюс охотно отвечали на вопросы. После окончания работ все увезли и прибрали, что тоже приятно удивило. Смело могу рекомендовать!
-                                    </div>
-                                    <div class="review-author">
-                                        <img src="images/author.png" alt="">
-                                        <p>Александр Варфоломеев,<br>г. Климовск</p>
-                                    </div>
-
-                                    <div class="slider-navs">
-                                        <a href="#" class="uk-slidenav-next" data-uk-slideset-item="next">Следующий отзыв<i class="fri fri-next"></i></a>
-                                    </div>
-                                </article>
-                            </li>
+        <!-- More services -->
+        <section class="more-services section scroll-section" id="more-services">
+            <div class="more-services-wrap">
+                <h2 class="section-title -color-light">Дополнительные услуги</h2>
+                <div class="uk-grid uk-grid-medium uk-grid-width-small-1-1 uk-grid-width-medium-1-2" data-uk-grid-match
+                     data-uk-grid-margin>
+                    <div>
+                        <ul class="uk-list">
+                            <li>Инженерно-геологические изыскания</li>
+                            <li>Профессиональное проектирование</li>
+                            <li>Строительство фундаментов зимой</li>
+                            <li>Арматурные работы</li>
+                            <li>Технадзор</li>
                         </ul>
-
+                    </div>
+                    <div>
+                        <ul class="uk-list">
+                            <li>Опалубка фундаментов</li>
+                            <li>Гидроизоляция, утепление, отмостка</li>
+                            <li>Строительство подземных сооружений</li>
+                            <li>Монолитные работы</li>
+                            <li>Осушение подземных сооружений</li>
+                        </ul>
                     </div>
                 </div>
-            </section><!-- Reviews section end -->
-
-            <!-- Works section -->
-            <section class="works section -bg-grey-light scroll-section" id="works">
-                <h2 class="section-title">Выполненные работы</h2>
-                <div class="uk-grid uk-grid-medium uk-grid-width-small-1-1 uk-grid-width-medium-1-2 uk-grid-width-large-1-4" data-uk-grid-margin data-uk-grid-match>
-                    <div class="article">
-                        <a href="images/article-img-2.jpg" data-uk-lightbox="{group: 'images2'}" title=""><img src="images/article-img-2.jpg" alt="" class="article-img"></a>
-                        <div class="-boxed -bg-light">
-                            <p class="article-title -color-dark -font-smaller">Ленточный заглубленный фундамент</p>
-                        </div>
-                    </div>
-                    <div class="article">
-                        <a href="images/article-img-2.jpg" data-uk-lightbox="{group: 'images2'}" title=""><img src="images/article-img-2.jpg" alt="" class="article-img"></a>
-                        <div class="-boxed -bg-light">
-                            <p class="article-title -color-dark -font-smaller">Ленточный заглубленный фундамент</p>
-                        </div>
-                    </div>
-                    <div class="article">
-                        <a href="images/article-img-2.jpg" data-uk-lightbox="{group: 'images2'}" title=""><img src="images/article-img-2.jpg" alt="" class="article-img"></a>
-                        <div class="-boxed -bg-light">
-                            <p class="article-title -color-dark -font-smaller">Ленточный заглубленный фундамент</p>
-                        </div>
-                    </div>
-                    <div class="article">
-                        <a href="images/article-img-2.jpg" data-uk-lightbox="{group: 'images2'}" title=""><img src="images/article-img-2.jpg" alt="" class="article-img"></a>
-                        <div class="-boxed -bg-light">
-                            <p class="article-title -color-dark -font-smaller">Ленточный заглубленный фундамент</p>
-                        </div>
-                    </div>
-                    <div class="article">
-                        <a href="images/article-img-2.jpg" data-uk-lightbox="{group: 'images2'}" title=""><img src="images/article-img-2.jpg" alt="" class="article-img"></a>
-                        <div class="-boxed -bg-light">
-                            <p class="article-title -color-dark -font-smaller">Ленточный заглубленный фундамент</p>
-                        </div>
-                    </div>
-                    <div class="article">
-                        <a href="images/article-img-2.jpg" data-uk-lightbox="{group: 'images2'}" title=""><img src="images/article-img-2.jpg" alt="" class="article-img"></a>
-                        <div class="-boxed -bg-light">
-                            <p class="article-title -color-dark -font-smaller">Ленточный заглубленный фундамент</p>
-                        </div>
-                    </div>
-                    <div class="article">
-                        <a href="images/article-img-2.jpg" data-uk-lightbox="{group: 'images2'}" title=""><img src="images/article-img-2.jpg" alt="" class="article-img"></a>
-                        <div class="-boxed -bg-light">
-                            <p class="article-title -color-dark -font-smaller">Ленточный заглубленный фундамент</p>
-                        </div>
-                    </div>
-                    <div class="article">
-                        <a href="images/article-img-2.jpg" data-uk-lightbox="{group: 'images2'}" title=""><img src="images/article-img-2.jpg" alt="" class="article-img"></a>
-                        <div class="-boxed -bg-light">
-                            <p class="article-title -color-dark -font-smaller">Ленточный заглубленный фундамент</p>
-                        </div>
-                    </div>
-                </div>
-            </section><!-- Works section end -->
-
-            <div class="footer-info -bg-orange" id="contacts">
-                <div class="uk-grid uk-grid-collapse">
-                    <div class="uk-width-small-1-1 uk-width-medium-1-3" data-uk-grid-match>
-                        <div class="footer-contacts">
-                            <h2 class="section-title">Контакты:</h2>
-                            <p>
-                                Наш адрес: <br>
-                                г. Москва, <br>
-                                Рубцовская наб., <br>
-                                д.4, корп. 1. <br><br>
-                                Электронная почта: <br>
-                                4103555@mail.ru <br> <br>
-                                Телефон: <br>
-                                +7-495-410-35-55
-                            </p>
-                        </div>
-                    </div>
-                    <div class="uk-width-small-1-1 uk-width-medium-2-3 -bg-light">
-                        <div id="">
-                            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=KNTyR-CoB1jt3PDqixWaZ9ksHtujUGfJ&amp;width=100%&amp;height=400&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=false"></script>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Footer block -->
-        <footer class="footer section">
-            <div class="footer-bottom">
                 <div class="uk-text-center">
-                    <p class="-color-light">&copy; 2009—2016. Профильная фундаментная компания «Фундаментально.рф»</p>
+                    <div class="section-after-info">
+                        Мы обладаем необходимыми разрешительными документами на все виды работ, выполняемые нашей
+                        компанией.
+                    </div>
+                </div>
+                <div class="uk-text-center">
+                    <a href="#form-modal" class="uk-button uk-button-primary" data-uk-modal="{center:true}">Обсудить ваш
+                        проект</a>
                 </div>
             </div>
-        </footer><!-- Footer block end -->
+        </section><!-- More services end -->
 
-        <!-- Modals -->
-        <!-- Form modal -->
-        <div id="form-modal" class="uk-modal">
-            <div class="uk-modal-dialog uk-modal-dialog-lightbox">
-                <a class="uk-modal-close uk-close uk-close-alt"></a>
-                <form action="" class="uk-form">
-                    <h4 class="modal-title -ff-bold -color-light uk-text-center">Заказать расчет фундамента</h4>
-                    <div class="uk-form-row">
-                        <label class="uk-form-label" for="">Ваше имя</label>
-                        <input type="text" placeholder="">
+        <!-- Reviews section -->
+        <section class="reviews section scroll-section" id="reviews">
+            <h2 class="section-title">Отзывы клиентов</h2>
+            <div data-uk-slideset="{default: 1, infinite: false, animation: 'slide-horizontal'}">
+                <div class="uk-slidenav-position">
+                    <ul class="uk-grid uk-slideset">
+                        <li class="uk-text-center">
+                            <article class="review">
+                                <div class="uk-text-center">
+                                    <div class="review-info">
+                                        Заказывал фундамент для своего дома — остался очень доволен работой. Менеджеры
+                                        грамотно отвечают на вопросы и реально разбираются в теме.
+                                        <br> <br>
+                                        Сам фундамент залили качественно и без заморочек. Рабочие профессиональные, плюс
+                                        охотно отвечали на вопросы. После окончания работ все увезли и прибрали, что
+                                        тоже приятно удивило. Смело могу рекомендовать!
+                                    </div>
+                                </div>
+                                <div class="review-author">
+                                    <img src="images/author.png" alt="" class="review-author__image">
+                                    <p>Александр Варфоломеев, <br>г. Климовск</p>
+                                </div>
+                                <div class="slider-navs">
+                                    <a href="#" class="uk-slidenav-next" data-uk-slideset-item="next">Следующий отзыв<i
+                                            class="fri fri-next"></i></a>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="uk-text-center">
+                            <article class="review">
+                                <div class="uk-text-center">
+                                    <div class="review-info">
+                                        Заказывал фундамент для своего дома — остался очень доволен работой. Менеджеры
+                                        грамотно отвечают на вопросы и реально разбираются в теме.
+                                        <br> <br>
+                                        Сам фундамент залили качественно и без заморочек. Рабочие профессиональные, плюс
+                                        охотно отвечали на вопросы. После окончания работ все увезли и прибрали, что
+                                        тоже приятно удивило. Смело могу рекомендовать!
+                                    </div>
+                                </div>
+                                <div class="review-author">
+                                    <img src="images/author.png" alt="" class="review-author__image">
+                                    <p class="review-author__name">Александр Варфоломеев, <br>г. Климовск</p>
+                                </div>
+
+                                <div class="slider-navs">
+                                    <a href="#" class="uk-slidenav-next" data-uk-slideset-item="next">Следующий отзыв<i
+                                            class="fri fri-next"></i></a>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="uk-text-center">
+                            <article class="review">
+                                <div class="review-info">
+                                    Заказывал фундамент для своего дома — остался очень доволен работой. Менеджеры
+                                    грамотно отвечают на вопросы и реально разбираются в теме.
+                                    <br> <br>
+                                    Сам фундамент залили качественно и без заморочек. Рабочие профессиональные, плюс
+                                    охотно отвечали на вопросы. После окончания работ все увезли и прибрали, что тоже
+                                    приятно удивило. Смело могу рекомендовать!
+                                </div>
+                                <div class="review-author">
+                                    <img src="images/author.png" alt="" class="review-author__image">
+                                    <p>Александр Варфоломеев,<br>г. Климовск</p>
+                                </div>
+
+                                <div class="slider-navs">
+                                    <a href="#" class="uk-slidenav-next" data-uk-slideset-item="next">Следующий отзыв<i
+                                            class="fri fri-next"></i></a>
+                                </div>
+                            </article>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </section><!-- Reviews section end -->
+
+        <!-- Works section -->
+        <section class="works section -bg-grey-light scroll-section" id="works">
+            <h2 class="section-title">Выполненные работы</h2>
+            <div class="uk-grid uk-grid-medium uk-grid-width-small-1-1 uk-grid-width-medium-1-2 uk-grid-width-large-1-4"
+                 data-uk-grid-margin data-uk-grid-match>
+                <div class="article">
+                    <div class="article__inner -bg-light">
+                        <a class="article__image-link__wrapper" href="images/article-img-2.jpg" data-uk-lightbox="{group: 'images2'}" title="">
+                            <img src="images/article-img-2.jpg" alt="" class="article-img">
+                        </a>
+                        <div class="-boxed -bg-light">
+                            <p class="article-title -color-dark -font-smaller">Фундамент в зимнее
+                                время</p>
+                        </div>
                     </div>
-                    <div class="uk-form-row">
-                        <label class="uk-form-label" for="">Контактный телефон или e-mail</label>
-                        <input type="text" placeholder="">
+                </div>
+                <div class="article">
+                    <div class="article__inner -bg-light">
+                        <a class="article__image-link__wrapper" href="images/article-img-2.jpg" data-uk-lightbox="{group: 'images2'}" title="">
+                            <img src="images/article-img-2.jpg" alt="" class="article-img">
+                        </a>
+                        <div class="-boxed -bg-light">
+                            <p class="article-title -color-dark -font-smaller">
+                                Фундамент в полной
+                                гидроизоляции</p>
+                        </div>
                     </div>
-                    <div class="uk-form-row">
-                        <label class="uk-form-label" for="">Что требуется рассчитать?</label>
-                        <textarea cols="" rows="" placeholder=""></textarea>
+                </div>
+                <div class="article">
+                    <div class="article__inner -bg-light">
+                        <a class="article__image-link__wrapper" href="images/article-img-2.jpg" data-uk-lightbox="{group: 'images2'}" title="">
+                            <img src="images/article-img-2.jpg" alt="" class="article-img">
+                        </a>
+                        <div class="-boxed -bg-light">
+                            <p class="article-title -color-dark -font-smaller">Ростверк на сваях.
+                                Поселок Новорижский</p>
+                        </div>
                     </div>
-                    <div class="uk-form-row">
-                        <button type="submit">Отправить заявку</button>
+                </div>
+                <div class="article">
+                    <div class="article__inner -bg-light">
+                        <a class="article__image-link__wrapper" href="images/article-img-2.jpg" data-uk-lightbox="{group: 'images2'}" title="">
+                            <img src="images/article-img-2.jpg" alt="" class="article-img">
+                        </a>
+                        <div class="-boxed -bg-light">
+                            <p class="article-title -color-dark -font-smaller">Строительство дома.
+                                Новосумино, Киевское ш</p>
+                        </div>
                     </div>
-                    <br>
-                    <small class="-ff-light-italic">
-                        После обработки заявки с вами свяжется
-                        наш менеджер для уточнения деталей
-                        и расчета стоимости
-                    </small>
-                </form>
+                </div>
+                <div class="article">
+                    <div class="article__inner -bg-light">
+                        <a class="article__image-link__wrapper" href="images/article-img-2.jpg" data-uk-lightbox="{group: 'images2'}" title="">
+                            <img src="images/article-img-2.jpg" alt="" class="article-img">
+                        </a>
+                        <div class="-boxed -bg-light">
+                            <p class="article-title -color-dark -font-smaller">Фундамент ростверк на сваях
+                                с утепленной отмосткой.
+                                Новая рига</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="article">
+                    <div class="article__inner -bg-light">
+                        <a class="article__image-link__wrapper" href="images/article-img-2.jpg" data-uk-lightbox="{group: 'images2'}" title="">
+                            <img src="images/article-img-2.jpg" alt="" class="article-img">
+                        </a>
+                        <div class="-boxed -bg-light">
+                            <p class="article-title -color-dark -font-smaller">Строительство дома из
+                                кирпича «Николина гора»</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="article">
+                    <div class="article__inner -bg-light">
+                        <a class="article__image-link__wrapper" href="images/article-img-2.jpg" data-uk-lightbox="{group: 'images2'}" title="">
+                            <img src="images/article-img-2.jpg" alt="" class="article-img">
+                        </a>
+                        <div class="-boxed -bg-light">
+                            <p class="article-title -color-dark -font-smaller">Устройство ленточного
+                                фундамента</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="article">
+                    <div class="article__inner -bg-light">
+                        <a class="article__image-link__wrapper" href="images/article-img-2.jpg" data-uk-lightbox="{group: 'images2'}" title="">
+                            <img src="images/article-img-2.jpg" alt="" class="article-img">
+                        </a>
+                        <div class="-boxed -bg-light">
+                            <p class="article-title -color-dark -font-smaller">Арматурные
+                                работы</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- Works section end -->
+
+        <div class="footer-info -bg-orange" id="contacts">
+            <div class="uk-grid uk-grid-collapse">
+                <div class="uk-width-small-1-1 uk-width-medium-1-3" data-uk-grid-match>
+                    <div class="footer-contacts">
+                        <h2 class="section-title">Контакты:</h2>
+                        <div>
+                            <p>Наш адрес:</p>
+                            <p class="-ff-bold">г. Москва, <br>
+                                Рубцовская наб., <br>
+                                д.4, корп. 1.</p><br>
+                            <p>Электронная почта:</p>
+                            <p class="-ff-bold">4103555@mail.ru</p>
+                            <br>
+                            <p>Телефон:</p>
+                            <p class="-ff-bold">+7-495-410-35-55</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-width-small-1-1 uk-width-medium-2-3 -bg-light">
+                    <div id="">
+                        <script type="text/javascript" charset="utf-8" async
+                                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=KNTyR-CoB1jt3PDqixWaZ9ksHtujUGfJ&amp;width=100%&amp;height=400&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=false"></script>
+                    </div>
+                </div>
             </div>
         </div>
-        <!-- Modals end -->
     </div>
 
-    <!-- Scripts -->
-    <!--build:js js/vendor.js-->
-    <!--bower:js-->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/uikit/js/uikit.min.js"></script>
-    <script src="bower_components/uikit/js/components/slideshow.min.js"></script>
-    <script src="bower_components/uikit/js/components/slideset.min.js"></script>
-    <script src="bower_components/uikit/js/components/slideshow-fx.min.js"></script>
-    <script src="bower_components/uikit/js/components/sticky.min.js"></script>
-    <script src="bower_components/uikit/js/components/lightbox.min.js"></script>
-    <script src="bower_components/uikit/js/components/tooltip.min.js"></script>
-    <!--endbower-->
-    <!--endbuild-->
-    <!--build:js js/main.js-->
-    <script src="js/app.js"></script>
-    <!--endbuild-->
-    <style>
-        #wrap_scrin {
-            position: relative;
-            left: 19px;
-        }
-    </style>
-    <script src="PP/PP.js"></script>
+    <!-- Footer block -->
+    <footer class="footer section">
+        <div class="footer-bottom">
+            <div class="uk-text-center">
+                <p class="-color-light">&copy; 2009—2016. Профильная фундаментная компания «Фундаментально.рф»</p>
+            </div>
+        </div>
+    </footer><!-- Footer block end -->
+
+    <!-- Modals -->
+    <!-- Form modal -->
+    <div id="form-modal" class="uk-modal">
+        <div class="uk-modal-dialog uk-modal-dialog-lightbox">
+            <a class="uk-modal-close uk-close uk-close-alt"></a>
+            <form action="" class="uk-form">
+                <h4 class="modal-title -ff-bold uk-text-center">Заказать расчет фундамента</h4>
+                <div class="uk-form-row">
+                    <label class="uk-form-label" for="">Ваше имя</label>
+                    <input type="text" placeholder="">
+                </div>
+                <div class="uk-form-row">
+                    <label class="uk-form-label" for="">Контактный телефон или e-mail</label>
+                    <input type="text" placeholder="">
+                </div>
+                <div class="uk-form-row">
+                    <label class="uk-form-label" for="">Что требуется рассчитать?</label>
+                    <textarea cols="" rows="" placeholder=""></textarea>
+                </div>
+                <div class="uk-form-row">
+                    <button type="submit">Отправить заявку</button>
+                </div>
+                <br>
+                <p class="modal-form__info-text">
+                    После обработки заявки с вами свяжется
+                    наш менеджер для уточнения деталей
+                    и расчета стоимости
+                </p>
+            </form>
+        </div>
+    </div>
+    <!-- Modals end -->
+</div>
+
+<!-- Scripts -->
+<!--build:js js/vendor.js-->
+<!--bower:js-->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/uikit/js/uikit.min.js"></script>
+<script src="bower_components/uikit/js/components/slideshow.min.js"></script>
+<script src="bower_components/uikit/js/components/slideset.min.js"></script>
+<script src="bower_components/uikit/js/components/slideshow-fx.min.js"></script>
+<script src="bower_components/uikit/js/components/sticky.min.js"></script>
+<script src="bower_components/uikit/js/components/lightbox.min.js"></script>
+<script src="bower_components/uikit/js/components/tooltip.min.js"></script>
+<!--endbower-->
+<!--endbuild-->
+<!--build:js js/main.js-->
+<script src="js/app.js"></script>
+<!--endbuild-->
+<!--<style>
+    #wrap_scrin {
+        position: relative;
+        left: 19px;
+    }
+</style>-->
+<!--<script src="PP/PP.js"></script>-->
 </body>
 </html>
