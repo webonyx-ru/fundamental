@@ -359,7 +359,7 @@ p {
 }
 
 .logo-large {
-  background-image: url('../images/logo-large.png?1472557165');
+  background-image: url('../images/logo-large.png?1472700799');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 415.5px 36.5px;
@@ -370,12 +370,12 @@ p {
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .logo-large {
-    background-image: url('../images/logo-large@2x.png?1472557165');
+    background-image: url('../images/logo-large@2x.png?1472700799');
   }
 }
 @media screen and (max-width: 992px) {
   .logo-large {
-    background-image: url('../images/logo-large.png?1472557165');
+    background-image: url('../images/logo-large.png?1472700799');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
@@ -384,12 +384,12 @@ p {
 }
 @media screen and (max-width: 992px) and (-webkit-min-device-pixel-ratio: 1.5), screen and (max-width: 992px) and (min-resolution: 1.5dppx) {
   .logo-large {
-    background-image: url('../images/logo-large@2x.png?1472557165');
+    background-image: url('../images/logo-large@2x.png?1472700799');
   }
 }
 
 .logo-small {
-  background-image: url('../images/logo-small.png?1472557165');
+  background-image: url('../images/logo-small.png?1472700799');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 52px 35.5px;
@@ -402,7 +402,7 @@ p {
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .logo-small {
-    background-image: url('../images/logo-small@2x.png?1472557165');
+    background-image: url('../images/logo-small@2x.png?1472700799');
   }
 }
 
@@ -430,14 +430,14 @@ p {
 .uk-offcanvas-bar .logo-small {
   display: block;
   width: 40px;
-  background-image: url('../images/logo-small.png?1472557165');
+  background-image: url('../images/logo-small.png?1472700799');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .uk-offcanvas-bar .logo-small {
-    background-image: url('../images/logo-small@2x.png?1472557165');
+    background-image: url('../images/logo-small@2x.png?1472700799');
   }
 }
 
@@ -573,7 +573,7 @@ p {
 }
 
 .more-services {
-  background-image: url('../images/more-services-bg.jpg?1472557165');
+  background-image: url('../images/more-services-bg.jpg?1472700799');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 998.5px 549px;
@@ -585,7 +585,7 @@ p {
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .more-services {
-    background-image: url('../images/more-services-bg@2x.jpg?1472557165');
+    background-image: url('../images/more-services-bg@2x.jpg?1472700799');
   }
 }
 .more-services .uk-row-first {
@@ -943,4 +943,8 @@ p {
 #mobile-nav .uk-list li {
   line-height: 30px;
   padding: 0 25px;
+}
+
+.uk-modal-page .uk-navbar.uk-visible-small {
+  padding-right: 17px;
 }
