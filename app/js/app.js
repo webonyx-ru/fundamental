@@ -208,3 +208,15 @@ $(window).scroll(function(e) {
         }
     }
 });
+
+
+$(document).ready(function() {
+    if($(window).width() < 768) {
+        var lightBtnElems = $('*[data-uk-lightbox]');
+        $(lightBtnElems).click(function (e) {
+            e.preventDefault();
+
+            return false;
+        });
+    }
+});
