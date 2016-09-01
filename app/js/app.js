@@ -1,216 +1,65 @@
-$.fn.inView = function(){
-    //Window Object
-    var win = $(window);
-    //Object to Check
-    obj = $(this);
-    //the top Scroll Position in the page
-    var scrollPosition = win.scrollTop();
-    //the end of the visible area in the page, starting from the scroll position
-    var visibleArea = win.scrollTop() + win.height();
-    //the end of the object to check
-    var objEndPos = (obj.offset().top + obj.outerHeight());
-    return(visibleArea >= objEndPos && scrollPosition <= objEndPos ? true : false)
-};
-
-/*
+/*window.addEventListener('DOMContentLoaded', function() {
+    QueryLoader2(document.querySelector("body"), {
+        barColor: "#efefef",
+        backgroundColor: "#111",
+        percentage: true,
+        barHeight: 1,
+        minimumTime: 200,
+        fadeOutTime: 1000
+    });
+});*/
 
 $(document).ready(function() {
-    var flag = false,
-        window_h = $(window).outerHeight(),
-        mousewheelevt = (/Firefox/i.test(navigator.userAgent)) ? "DOMMouseScroll" : "mousewheel"; // событие прокрутки колеса
+    $(window).scrollTop(0);
 
-    function getDelta(e){
-        var evt = e || window.event;
-        evt = evt.originalEvent ? evt.originalEvent : evt;
-        return delta = evt.detail ? evt.detail*(-40) : evt.wheelDelta;
-    }
+    $.fn.inView = function(){
+        //Window Object
+        var win = $(window);
+        //Object to Check
+        obj = $(this);
+        //the top Scroll Position in the page
+        var scrollPosition = win.scrollTop();
+        //the end of the visible area in the page, starting from the scroll position
+        var visibleArea = win.scrollTop() + win.height();
+        //the end of the object to check
+        var objEndPos = (obj.offset().top + obj.outerHeight());
+        return(visibleArea >= objEndPos && scrollPosition <= objEndPos ? true : false)
+    };
 
-    // ловим событие прокрутки
-    $(document).on(mousewheelevt+'.my_wheel', function(e){
-        e.preventDefault();
+    var scrollElems = document.querySelectorAll('[data-scroll]');
 
-        /!*if (active_scroll !== true) {
-            return;
-        }*!/
+    for(var i=0; i < scrollElems.length; i++) {
 
-
-        console.log($(window).scrollTop() + ($(window).height() / 2));
-
-        if ( getDelta(e) < 0 ) { // down
-            var currentElem = $(e.target),
-                currrentElemClossest = currentElem.closest('.scroll-section');
-
-            var needToScroll = currrentElemClossest.next();
-
-            $('html, body').animate({
-                scrollTop: needToScroll.offset().top - 60
-            }, 300);
-
-        } else if (getDelta(e) > 0) { // up
-            var currentElem = $(e.target),
-                currrentElemClossest = currentElem.closest('.scroll-section');
-
-            var needToScroll = currrentElemClossest.prev();
-
-            if(needToScroll === 'undefined') {
-                $('html, body').animate({
-                    scrollTop: $('.header').offset().top
-                }, 300);
-            } else {
-                $('html, body').animate({
-                    scrollTop: needToScroll.offset().top - 60
-                }, 300);
-            }
-        }
-
-        return false;
-    });
-});
-
-function getNextElement(el) {
-    if(el.next() === true) {
-        return getNextElement(el.next());
-    } else {
-        return el.next();
-    }
-}
-/!*
-    /!*$(window).bind('mousewheel DOMMouseScroll', function(event){
-        if (event.originalEvent.wheelDelta > 0 || event.originalEvent.detail < 0) {
-            // scroll up
-        }
-        else {
-            // scroll down
-            console.log(event)
-        }
-    });*!/
-
-    var active_scroll = true;
-
-
-    if ($(".site-wrapper").outerWidth() > 960) {
-
-    }
-
-
-    $(window).resize(function(){
-        if ($(".site-wrapper").outerWidth() > 960) {
-            full_screen();
-        }
-        active_scroll_f();
-    });
-
-    active_scroll_f();
-
-    function active_scroll_f() {
-        if ($(".site-wrapper").outerWidth() > 960) {
-            active_scroll = true;
-        } else {
-            active_scroll = false;
-        }
-    }
-
-    $(function(){
-        var flag = false,
-            window_h = $(window).outerHeight(),
-            mousewheelevt = (/Firefox/i.test(navigator.userAgent)) ? "DOMMouseScroll" : "mousewheel"; // событие прокрутки колеса
-
-        function getDelta(e){
-            var evt = e || window.event;
-            evt = evt.originalEvent ? evt.originalEvent : evt;
-            return delta = evt.detail ? evt.detail*(-40) : evt.wheelDelta;
-        }
-
-        // ловим событие прокрутки
-        $(document).on(mousewheelevt+'.my_wheel', function(e){
+        $(scrollElems[i]).click(function(e) {
             e.preventDefault();
 
-            /!*if (active_scroll !== true) {
-                return;
-            }*!/
+            var currentHref = $(this).attr('href'),
+                scrollDiv = $(currentHref),
+                windowHeight = $(window).height();
 
-            var allScrollDivs = $('.section-scroll');
+            if(!(windowHeight < scrollDiv.height())) {
+                var needleOffset = (windowHeight - scrollDiv.height()) / 2;
 
-            if ( getDelta(e) < 0 ) { // down
-                console.log(allScrollDivs);
+                $('body, html').animate({
+                    scrollTop: $(scrollDiv).offset().top - needleOffset
+                });
 
-            } else if (getDelta(e) > 0) { // up
-                console.log(2);
+            } else {
+                $('html, body').animate({
+                    scrollTop: $(scrollDiv).offset().top - 50
+                });
             }
 
+            if(history.pushState) {
+                history.pushState(null, null, currentHref);
+            }
+            else {
+                location.hash = currentHref;
+            }
             return false;
         });
-    });
-
-
-    function elementInViewport(el) {
-        var top = el.offsetTop;
-        var left = el.offsetLeft;
-        var width = el.offsetWidth;
-        var height = el.offsetHeight;
-
-        while(el.offsetParent) {
-            el = el.offsetParent;
-            top += el.offsetTop;
-            left += el.offsetLeft;
-        }
-
-        return (
-            top >= window.pageYOffset &&
-            left >= window.pageXOffset &&
-            (top + height) <= (window.pageYOffset + window.innerHeight) &&
-            (left + width) <= (window.pageXOffset + window.innerWidth)
-        );
     }
 
-})(jQuery);*!/
-*/
-
-var scrollElems = document.querySelectorAll('[data-scroll]');
-
-for(var i=0; i < scrollElems.length; i++) {
-
-    $(scrollElems[i]).click(function(e) {
-        e.preventDefault();
-
-        var currentHref = $(this).attr('href'),
-            scrollDiv = $(currentHref),
-            windowHeight = $(window).height();
-
-
-        if(!(windowHeight < scrollDiv.height())) {
-            var needleOffset = (windowHeight - scrollDiv.height()) / 2;
-
-            $('html, body').animate({
-                scrollTop: $(scrollDiv).offset().top - needleOffset
-            }, 500);
-
-        } else {
-            $('html, body').animate({
-                scrollTop: $(scrollDiv).offset().top - 50
-            }, 500);
-        }
-
-        return false;
-    });
-}
-
-$(window).scroll(function(e) {
-    for(var i=0; i < scrollElems.length; i++) {
-        var currentHref = $(scrollElems[i]).attr('href'),
-            scrollDiv = $(currentHref),
-            windowHeight = $(window).height();
-
-        if(scrollDiv.inView() === true) {
-            $(scrollElems[i]).parent().addClass('active');
-        } else {
-            $(scrollElems[i]).parent().removeClass('active');
-        }
-    }
-});
-
-
-$(document).ready(function() {
     if($(window).width() < 768) {
         var lightBtnElems = $('*[data-uk-lightbox]');
         $(lightBtnElems).click(function (e) {
@@ -219,4 +68,19 @@ $(document).ready(function() {
             return false;
         });
     }
+
+
+
+    setTimeout(function() {
+        (function () {
+            var currentHash = location.hash;
+            for(var i=0; i < scrollElems.length; i++) {
+                if($(scrollElems[i]).attr('href') === currentHash) {
+                    $(scrollElems[i]).click();
+                }
+            }
+        })();
+    }, 200)
 });
+
+
