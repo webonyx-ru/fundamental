@@ -566,6 +566,11 @@ p {
   height: 190px;
   position: relative;
 }
+@media screen and (max-width: 767px) {
+  .article .article__image-link__wrapper {
+    height: auto;
+  }
+}
 
 .more-services {
   background-image: url('../images/more-services-bg.jpg?1472557165');
@@ -754,6 +759,11 @@ p {
 }
 .works .article__image-link__wrapper {
   height: 140px;
+}
+@media screen and (max-width: 767px) {
+  .works .article__image-link__wrapper {
+    height: auto;
+  }
 }
 
 .uk-slideshow .uk-container {
